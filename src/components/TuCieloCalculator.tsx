@@ -49,27 +49,23 @@ export default function TuCieloCalculator() {
 
   return (
     <div className={styles['loan-calculator']}>
-      <Head>
-        <title>HOA Loan Proposal Calculator | TuCielo</title>
-        <meta name="description" content="Quickly estimate monthly HOA loan payments. Try TuCielo’s free calculator built for community associations." />
-        
-        {/* Open Graph (for Facebook, LinkedIn, etc.) */}
-        <meta property="og:title" content="HOA Loan Proposal Calculator | TuCielo" />
-        <meta property="og:description" content="Quickly estimate monthly HOA loan payments. Try TuCielo’s free calculator built for community associations." />
-        <meta property="og:image" content="cloud_logo.jpg" />
-        <meta property="og:url" content="https://yourdomain.com/calculator" />
-        <meta property="og:type" content="website" />
+     <Head>
+      <title>HOA Loan Proposal Calculator | TuCielo</title>
+      <meta name="description" content="Quickly estimate monthly HOA loan payments. Try TuCielo’s free calculator built for community associations."/>
+      <link rel="icon" href="/cloud_logo.jpg" />
+      <meta property="og:title" content="HOA Loan Proposal Calculator | TuCielo" />
+      <meta property="og:description" content="Quickly estimate monthly HOA loan payments. Try TuCielo’s free calculator built for community associations."/>
+      <meta property="og:image" content="/cloud_logo.jpg" />
+      <meta property="og:url" content="https://yourdomain.com/calculator" />
+      <meta property="og:type" content="website" />
+      <meta name="twitter:card" content="summary_large_image" />
+      <meta name="twitter:title" content="HOA Loan Proposal Calculator | TuCielo" />
+      <meta name="twitter:description" content="Quickly estimate monthly HOA loan payments. Try TuCielo’s free calculator built for community associations."/>
+      <meta name="twitter:image" content="/cloud_logo.jpg" />
+    </Head>
       
-        {/* WhatsApp, Messenger, etc. use Open Graph too */}
-      
-        {/* Twitter Card */}
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="HOA Loan Proposal Calculator | TuCielo" />
-        <meta name="twitter:description" content="Quickly estimate monthly HOA loan payments. Try TuCielo’s free calculator built for community associations." />
-        <meta name="twitter:image" content="https://yourdomain.com/preview.jpg" />
-      </Head>
       <h2>TuCielo HOA Loan Proposal Calculator</h2>
-
+      
       <label>Number of Units</label>
       <input
         type="number"
