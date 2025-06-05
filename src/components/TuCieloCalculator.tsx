@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import styles from '../styles/LoanCalculator.module.css';
+import { Helmet } from 'react-helmet';
 
 export default function TuCieloCalculator() {
   const [units, setUnits] = useState(50);
@@ -48,6 +49,25 @@ export default function TuCieloCalculator() {
 
   return (
     <div className={styles['loan-calculator']}>
+      <Helmet>
+        <title>HOA Loan Proposal Calculator | TuCielo</title>
+        <meta name="description" content="Quickly estimate monthly HOA loan payments. Try TuCielo’s free calculator built for community associations." />
+        
+        {/* Open Graph (for Facebook, LinkedIn, etc.) */}
+        <meta property="og:title" content="HOA Loan Proposal Calculator | TuCielo" />
+        <meta property="og:description" content="Quickly estimate monthly HOA loan payments. Try TuCielo’s free calculator built for community associations." />
+        <meta property="og:image" content="https://yourdomain.com/preview.jpg" />
+        <meta property="og:url" content="https://yourdomain.com/calculator" />
+        <meta property="og:type" content="website" />
+      
+        {/* WhatsApp, Messenger, etc. use Open Graph too */}
+      
+        {/* Twitter Card */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="HOA Loan Proposal Calculator | TuCielo" />
+        <meta name="twitter:description" content="Quickly estimate monthly HOA loan payments. Try TuCielo’s free calculator built for community associations." />
+        <meta name="twitter:image" content="https://yourdomain.com/preview.jpg" />
+      </Helmet>
       <h2>TuCielo HOA Loan Proposal Calculator</h2>
 
       <label>Number of Units</label>
