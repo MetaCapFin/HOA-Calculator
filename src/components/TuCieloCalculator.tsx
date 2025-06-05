@@ -56,7 +56,7 @@ export default function TuCieloCalculator() {
         {/* Open Graph (for Facebook, LinkedIn, etc.) */}
         <meta property="og:title" content="HOA Loan Proposal Calculator | TuCielo" />
         <meta property="og:description" content="Quickly estimate monthly HOA loan payments. Try TuCielo’s free calculator built for community associations." />
-        <meta property="og:image" content="https://yourdomain.com/preview.jpg" />
+        <meta property="og:image" content="cloud_logo.jpg" />
         <meta property="og:url" content="https://yourdomain.com/calculator" />
         <meta property="og:type" content="website" />
       
