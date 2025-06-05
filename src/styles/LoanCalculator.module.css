@@ -108,24 +108,37 @@ input[type="range"].input {
   margin-top: 20px;
 }
 
-/* Responsive */
+/* Responsive for mobile */
 @media (max-width: 768px) {
   .loan-calculator {
-    max-width: 400px; /* keeps container reasonably wide on mobile */
-    min-width: 320px; /* ensures it doesn’t get too narrow */
-    padding: 20px 20px; /* balanced padding on all sides */
-    margin: 20px auto; /* vertical margin so it doesn’t hug edges */
-    box-sizing: border-box; /* include padding in width */
+    max-width: 400px;
+    min-width: 320px;
+    padding: 20px;
+    margin: 20px auto;
+    overflow-x: auto; /* allow horizontal scroll if content too wide */
   }
 
+  /* Table wrapper to enable scroll if too wide */
+  .overflow-auto {
+    max-height: 400px;
+    overflow-x: auto;  /* enable horizontal scrolling on mobile */
+    border-radius: 6px;
+    margin-top: 20px;
+  }
+
+  /* Make table min width 100% to avoid shrinking, but allow scrolling */
   .table {
-    font-size: 0.9rem; /* slightly larger for readability */
-    min-width: 320px; /* prevents table from shrinking too much */
+    min-width: 100%; 
+    font-size: 0.9rem;
+    border-collapse: collapse;
   }
 
-  /* Optional: make input font slightly bigger on mobile */
+  /* Inputs */
   .input {
     font-size: 1.05rem;
+    width: 100%; /* always full width */
+    box-sizing: border-box;
   }
 }
+
 
