@@ -111,10 +111,21 @@ input[type="range"].input {
 /* Responsive */
 @media (max-width: 768px) {
   .loan-calculator {
-    padding: 20px 15px;
+    max-width: 400px; /* keeps container reasonably wide on mobile */
+    min-width: 320px; /* ensures it doesn’t get too narrow */
+    padding: 20px 20px; /* balanced padding on all sides */
+    margin: 20px auto; /* vertical margin so it doesn’t hug edges */
+    box-sizing: border-box; /* include padding in width */
   }
 
   .table {
-    font-size: 0.85rem;
+    font-size: 0.9rem; /* slightly larger for readability */
+    min-width: 320px; /* prevents table from shrinking too much */
+  }
+
+  /* Optional: make input font slightly bigger on mobile */
+  .input {
+    font-size: 1.05rem;
   }
 }
+
