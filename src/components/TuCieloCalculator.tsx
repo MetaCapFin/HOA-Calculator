@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import styles from '../styles/LoanCalculator.module.css';
-import { Helmet } from 'react-helmet';
+import Head from 'next/head';
 
 export default function TuCieloCalculator() {
   const [units, setUnits] = useState(50);
