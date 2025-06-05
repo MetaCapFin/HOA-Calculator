@@ -49,7 +49,7 @@ export default function TuCieloCalculator() {
 
   return (
     <div className={styles['loan-calculator']}>
-      <Helmet>
+      <Head>
         <title>HOA Loan Proposal Calculator | TuCielo</title>
         <meta name="description" content="Quickly estimate monthly HOA loan payments. Try TuCielo’s free calculator built for community associations." />
         
@@ -67,7 +67,7 @@ export default function TuCieloCalculator() {
         <meta name="twitter:title" content="HOA Loan Proposal Calculator | TuCielo" />
         <meta name="twitter:description" content="Quickly estimate monthly HOA loan payments. Try TuCielo’s free calculator built for community associations." />
         <meta name="twitter:image" content="https://yourdomain.com/preview.jpg" />
-      </Helmet>
+      </Head>
       <h2>TuCielo HOA Loan Proposal Calculator</h2>
 
       <label>Number of Units</label>
